@@ -47,12 +47,10 @@ choco install -y `
   treesizefree `
   everything `
   gh `
-  powershell
+  powershell `
+  pyenv-win `
 Start-Sleep -Seconds 5
 
-# Install pyenv for Windows (via winget) and use it to install Python 3.13
-winget install pyenv.pyenv-win -s winget
-Start-Sleep -Seconds 5
 
 # Add pyenv to the current session
 $env:PYENV="${env:USERPROFILE}\.pyenv\pyenv-win"
